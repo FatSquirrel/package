@@ -1,0 +1,12 @@
+<IfModule mod_security.c>
+SecFilterEngine Off
+SecFilterScanPOST Off
+</IfModule>
+<IfModule mod_rewrite.c>
+  
+  RewriteEngine on
+  
+  RewriteBase /ct
+  RewriteCond $1 !^(index\.php|ct|bower_components|user_guide|ckeditor|ckfinder|uploads|img|css|js|robots\.txt|test\.php|test|fonts|google8ad60224dd009e98\.html|c.php|tcpdf|$)
+  RewriteRule ^(.*)$ index.php/$1 [L,QSA]
+</IfModule>

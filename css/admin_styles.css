@@ -1,0 +1,21 @@
+.text-sort {
+
+	width:50px;
+}
+
+.delete-pic {
+	background:#f00 !important;
+}
+
+.product-pic {
+	float:left;background:#eee;text-align:center;margin:10px;border-radius:5px;padding:10px;
+	border:1px solid #aaa;
+}
+
+.product-pic > img {
+	cursor:pointer;
+}
+
+.product-pic:hover {
+	border:1px solid #f00;
+}
